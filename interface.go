@@ -96,7 +96,7 @@ func createSession(ctx context.Context) (SessionID, context.Context) {
 	// Allocate a new session ID
 	id := SessionID{atomic.AddUint64(&lastSessionID, 1)}
 
-	// Create a spot to spot to hold the session information.
+	// Create a spot to hold the session information.
 	ctxValue := &sessionContextValue{sesID: id}
 
 	// Derive a new context with this information.
