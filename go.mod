@@ -1,6 +1,6 @@
 module github.com/ipfs/go-ipfs-exchange-interface
 
-go 1.15
+go 1.16
 
 require (
 	github.com/ipfs/go-block-format v0.0.2
